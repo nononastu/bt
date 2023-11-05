@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop_detail</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script languages="javascript" src="shop.js"></script>
+    <link rel="stylesheet" href="shop_detail.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <a id="button-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+        <div id="header">
+            <div id="header_top">
+                <div class="header_top_con">
+                    <p>Free Delivery: Take advantage of our time to save event</p>
+                </div>
+                <div class="language_currency">
+                    <div class="language">
+                        <form action="" method="GET" >
+                            <p>Select Language
+                                <select name="language"id="select">
+                                  <option value="english">English</option>
+                                  <option value="french">French</option>
+                                  <option value="vietnamese">Vietnamese</option>
+                                  <option value="zulu">Zulu</option>
+                                </select>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="language">
+                        <form action="" method="GET" >
+                            <p>Select Currency
+                                <select name="Currency"id="select">
+                                  <option value="dolor">$</option>
+                                  <option value="Euro">€</option>
+                                  <option value="pound">£</option>
+                                  <option value="VND">₫</option>
+                                </select>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="header_navbar">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                
+                <div class="menu">
+                    <ul class="ul1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
+                            <div class="menu2">
+                                <ul class="dropdown-menu" >
+                                    <li class="dropdown-item"><a href="blog.html">Blog Grid Sidebar Right</a></li>
+                                    <li class="dropdown-item"><a href="blog_detail.html">Blog Grid Sidebar Right</a></li>
+                                    <li class="dropdown-item"><a href="about.html">About</a></li>
+                                    <li class="dropdown-item"><a href="cart.html">Cart</a></li>
+                                    <li class="dropdown-item"><a href="checkout.html">Checkout</a></li>
+                                    <li class="dropdown-item"><a href="qa.html">Frequently Questions</a></li>
+                                    <li class="dropdown-item"><a href="shop_detail.html">Single Product-Default</a></li>
+                                    <li class="dropdown-item"><a href="shop.html">Shop - Full Width</a></li>
+                                </ul>
+                            </div> 
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+                            <ul class="dropdown-menu" id="ul">
+                                <li class="dropdown-item" id="li">
+                                    <div class="menu2">
+                                        <p class="p">SHOP LAYOUT</p>
+                                        <ul class="ul">
+                                            <li><a href="#">Grid Left Sidebar</a></li>
+                                            <li><a href="#">Grid Right Sidebar</a></li>
+                                            <li><a href="#">Full Width</a></li>
+                                            <li><a href="#">List Left Sidebar</a></li>
+                                            <li><a href="#">List Right Sideba</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu2">
+                                        <p class="p">SHOP PAGES</p>
+                                        <ul class="ul">
+                                            <li><a href="#">Cart</a></li>
+                                            <li><a href="#">Checkout</a></li>
+                                            <li><a href="#">Compare</a></li>
+                                            <li><a href="#">Empty Cart</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Login</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu2">
+                                        <p class="p">PRODUCT SINGLE</p>
+                                        <ul class="ul">
+                                            <li><a href="#">Simple</a></li>
+                                            <li><a href="#">Affiliate</a></li>
+                                            <li><a href="#">Grouped</a></li>
+                                            <li><a href="#">Variable</a></li>
+                                            <li><a href="#">Left Tab</a></li>
+                                            <li><a href="#">Right Tab</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu2">
+                                        <p class="p">PRODUCT SINGLE</p>
+                                        <ul class="ul">
+                                            <li><a href="#">Single Slider</a></li>
+                                            <li><a href="#">Gallery Left</a></li>
+                                            <li><a href="#">Gallery Right</a></li>
+                                            <li><a href="#">Sticky Left</a></li>
+                                            <li><a href="#">Sticky Right</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                CUSTOM BLOCK</i>
+                            </a>
+                            <ul class="dropdown-menu" >
+                                <li class="dropdown-item">
+                                    <div class="ul">
+                                        <p class="p">WOMEN IS CLOTHES & FASHION</p>
+                                        <p class="p-1">SHOP WOMEN IS CLOTHING AND ACCESSORIES AND GET INSPIRED BY THE LASTEST FASHION TRENDS.</p>
+                                    </div>      
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="ul">
+                                        <p class="p">SIMPLE STYLE</p>
+                                        <p class="p-1">A NEW FLATTERING STYLE WITH ALL THE COMFORT FOR OUT LINEN.</p>
+                                    </div> 
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="ul">
+                                        <p class="p">EASY LAYERS</p>
+                                        <p class="p-1">ENDLESS STYLING POSSIBILITIES IN A COLLECTION FULL OF VERSATILE PIECES.</p>
+                                    </div>    
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            BLOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">Blog Grid</li>
+                                <li class="dropdown-item">Blog List</li>
+                                <li class="dropdown-item">Blog Single</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li>About Us</li>
+                                <li>Frequently Questions</li>
+                                <li>Privacy Policy</li>
+                                <li>404 Page</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="p">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="acc_like_cart">
+                    <div class="user_hd">
+                        <a href="login.html"><i class="fa-solid fa-user-group"></i></a>
+                    </div>
+                    <div class="like_hd">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>   
+                    <div class="cart">
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <span id="slsp">1</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="bar_icon"></div>
+                </div>
+            </div>
+            <div id="cate_search">
+                <div class="cate">
+                    <i class="fa-solid fa-bars-staggered"> CATEGORIES</i>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search.." style="width: 91%; height: 100%;"> <button style="width: 8%; height: 100%;" class="btn_s"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="breadcrumb">
+                <div class="bread">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Single Product - Default</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>     
+        </div>
+
+        <div id="body">
+            <div class="buy_pro">
+                <div class="buy_bor">
+                    <div class="img"><img src="img/product/category-home-1-img-5.jpg" alt=""></div>
+                    <div class="buy">
+                        <div class="decrip">
+                            <p class="p2">Fresh Beef</p>
+                            <div class="star">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="cost_sale">
+                                <p class="cost">$19.00 <s class="old">$29.00</s></p> 
+                                <div class="sale1"><button>-34%</button></div>
+                            </div>
+                            <div class="decription">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae veniam enim amet, eligendi esse corporis facere impedit obcaecati doloribus rem consequatur, animi architecto maxime eveniet rerum facilis. Molestiae, ea.</p>
+                            </div>
+                        </div>
+                        <div class="trans">
+                            <p>199 IN STOCK</p>
+                            <div class="transport">
+                                <p><i class="fa-regular fa-file-lines"></i> Size Guide</p>
+                                <p><i class="fa-solid fa-truck"></i> Shipping</p>
+                                <p><i class="fa-regular fa-envelope"></i> Ask About This product</p>
+                            </div>
+                            <div class="int">Quantity: <button class="btn-decrease">-</button><span id="quantity">1</span><button class="btn-increase">+</button></div>
+
+                            <div class="add_like">
+                                <button class="add">Add to cart</button>
+                                <button class="circle-singleline"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                            <form action="" method="GET">
+                                <div class="form">
+                                    <input type="checkbox" name="interest" value="doc_sach" />I agree with the terms and condition
+                                </div>
+                            </form>
+                            <button class="buy_btn">BUY IT NOW</button>
+                            <div class="buy_pay">
+                                <p>Guatanteed safe checkout</p>
+                                <div class="pay1">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </div>
+                            </div>
+                            <div class="share">
+                                <b>Share: </b>
+                                <div class="icon1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="product_detail">
+                <div class="pd_btn">
+                    <button class="det">Description</button>
+                    <button class="pd">Product Details</button>
+                    <button class="rv">Reviews</button>
+                </div>
+                <div class="pd_w">
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sit iure recusandae exercitationem officia, dicta quas natus quasi velit mollitia tempora possimus ut. Mollitia eveniet, nesciunt doloremque laborum reprehenderit ad.</p>
+                    <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque harum delectus maxime odit debitis modi officia dignissimos voluptatum sit?</p>
+                    <p class="p2">Product Highlights:</p>
+                    <p class="p4">UHD 4K Output up to 60 fps</p>
+                    <p class="p4">8.29MP,1" CMOS Sensor</p>
+                    <p class="p4">Dual-Pixel CMOS Autofocus Feature</p>
+                    <p class="p4">Intergrated 15x Optiical Zoom Lens</p>
+                    <p class="p4">2 x DIGIC DV 6 Processors</p>
+                </div>
+            </div>
+            <div class="rel_pro">
+                <div class="selec">
+                    <p>Related Products</p>
+                    <button class="btn">More Products </button>
+                </div>
+                <div class="product_list1">
+                    <div class="pro1">
+                        <div class="product1">
+                            <div class="sale"><button>-34%</button></div>
+                            <div class="add_cart"><button class="btn_cart"><i class="fa-solid fa-cart-shopping"></i></button></div>
+                            <img src="img/product/category-home-1-img-1.jpg" alt="">
+                            <div class="star">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="p4">Fresh Eggs</p>
+                            <p class="cost">$19.00 <s class="old">$29.00</s></p>
+                        </div>
+                        <div class="product1">
+                            <div class="sale"><button>-34%</button></div>
+                            <div class="add_cart"><button class="btn_cart"><i class="fa-solid fa-cart-shopping"></i></button></div>
+                            <img src="img/product/category-home-1-img-8.jpg" alt="">
+                            <div class="star">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="p4">Fresh Eggs</p>
+                            <p class="cost">$19.00 <s class="old">$29.00</s></p>
+                        </div>
+                        <div class="product1">
+                            <div class="sale"><button>-34%</button></div>
+                            <div class="add_cart"><button class="btn_cart"><i class="fa-solid fa-cart-shopping"></i></button></div>
+                            <img src="img/product/category-home-1-img-9.jpg" alt="">
+                            <div class="star">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="p4">Fresh Eggs</p>
+                            <p class="cost">$19.00 <s class="old">$29.00</s></p>
+                        </div>
+                        <div class="product1">
+                            <div class="sale"><button>-34%</button></div>
+                            <div class="add_cart"><button class="btn_cart"><i class="fa-solid fa-cart-shopping"></i></button></div>
+                            <img src="img/product/category-home-1-img-10.jpg" alt="">
+                            <div class="star">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p class="p4">Fresh Eggs</p>
+                            <p class="cost">$19.00 <s class="old">$29.00</s></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_company">
+                    <img src="img/company-logo/company-logo-1.png" alt="">
+                    <img src="img/company-logo/company-logo-2.png" alt="">
+                    <img src="img/company-logo/company-logo-3.png" alt="">
+                    <img src="img/company-logo/company-logo-4.png" alt="">
+                    <img src="img/company-logo/company-logo-5.png" alt="">
+                    <img src="img/company-logo/company-logo-6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_top">
+                <div class="top_left">
+                    <img class="" src="img/logo.png" alt="">
+                    <div class="left_w">
+                        <div class="w-icon">
+                            <i class="fa-solid fa-house"></i>
+                            <p>&nbsp; No:58A,your Street,Baltimore,USA 4508</p>
+                        </div>
+                        <div class="w-icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>&nbsp; +01 23456789</p>
+                        </div>
+                        <div class="w-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>&nbsp; support@somemail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="icon">
+                        <div class="circle-singleline"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="circle-singleline"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="circle-singleline"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="circle-singleline"><i class="fa-brands fa-google-plus-g"></i></div>            
+                    </div>                  
+                </div>
+                <!-- <div class="top_right"> -->
+                    <div class="top">
+                        <p class="p5">INFORMATION</p>
+                        <p>Delvery information</p>
+                        <p>Advanced Search</p>
+                        <p>Helps & Faqs</p>
+                        <p>Store Location</p>
+                        <p>Order & Returns</p>
+                        <p>Deliveries</p>
+                        <p>Refund & Returns</p>
+                    </div>
+                    <div class="top">
+                        <p class="p5">OUR COMPANY</p>
+                        <p>Delvery information</p>
+                        <p>Advanced Search</p>
+                        <p>Helps & Faqs</p>
+                        <p>Store Location</p>
+                        <p>Order & Returns</p>
+                        <p>Deliveries</p>
+                        <p>Refund & Returns</p>
+                    </div>
+                    <div class="top">
+                        <p class="p5">MY ACCOUNT</p>
+                        <p>Delvery information</p>
+                        <p>Advanced Search</p>
+                        <p>Helps & Faqs</p>
+                        <p>Store Location</p>
+                        <p>Order & Returns</p>
+                        <p>Deliveries</p>
+                        <p>Refund & Returns</p>
+                    </div>
+                    <div class="top">
+                        <p class="p5">Openning Time</p>
+                        <p>Delvery information</p>
+                        <p>Advanced Search</p>
+                        <p>Helps & Faqs</p>
+                        <p>Store Location</p>
+                        <p>Order & Returns</p>
+                        <p>Deliveries</p>
+                        <p>Refund & Returns</p>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="footer_bot">
+                <div class="w">
+                    <p>Copyright&nbsp;<p class="color">HasThemes.</p>All Rights Reserved</p>
+                </div>
+                <div class="pay">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
